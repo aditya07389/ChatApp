@@ -66,6 +66,8 @@ def signup(request):
 
     return render(request, 'chatapp/authenticate/signup.html',{'messages': messages.get_messages(request)})
 
+
+# View to render home page , login required to access this template
 @login_required
 def home(request):
 
@@ -77,9 +79,9 @@ def home(request):
 
 
 
-def chat_view(request, room_name):
-    messages = Message.objects.filter(room_name=room_name).order_by('timestamp')
-    return render(request, "chatapp/Chat/home.html", {"messages": messages},{'user': request.user})
+# def chat_view(request, room_name):
+#     messages = Message.objects.filter(room_name=room_name).order_by('timestamp')
+#     return render(request, "chatapp/Chat/home.html", {"messages": messages},{'user': request.user})
 
 
 
