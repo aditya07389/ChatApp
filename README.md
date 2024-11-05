@@ -8,7 +8,12 @@ A real-time chat application built with Django.
 <img src="https://github.com/user-attachments/assets/f3186d84-d684-48d5-9efd-50d2020e4af2" alt="Screenshot 1" width="200" style="display:inline;">
 <img src="https://github.com/user-attachments/assets/f8b209c6-d358-4235-992d-434a4a967e1e" alt="Screenshot 2" width="200" style="display:inline;">
 <img src="https://github.com/user-attachments/assets/6de739a4-a848-48f5-8f7d-4e2881b15e42" alt="Screenshot 3" width="200" style="display:inline;">
-<img src="https://github.com/user-attachments/assets/1e426390-852e-4aaf-991c-5c1911570872" alt="Screenshot 4" width="200" style="display:inline;">
+<img src="https://github.com/user-attachments/assets/93443b16-f135-4877-9f28-eb88fe3a54ca" alt="Screenshot 4" width="200" style="display:inline;">
+<img src="https://github.com/user-attachments/assets/1e426390-852e-4aaf-991c-5c1911570872" alt="Screenshot 5" width="200" style="display:inline;">
+
+
+
+
 
 # How to use ?
 
