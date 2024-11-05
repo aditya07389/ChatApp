@@ -3,6 +3,26 @@
 
 A real-time chat application built with Django.
 
+# Screenshots of the Application:
+
+<img src="https://github.com/user-attachments/assets/f3186d84-d684-48d5-9efd-50d2020e4af2" alt="Screenshot 1" width="200" style="display:inline;">
+<img src="https://github.com/user-attachments/assets/f8b209c6-d358-4235-992d-434a4a967e1e" alt="Screenshot 2" width="200" style="display:inline;">
+<img src="https://github.com/user-attachments/assets/6de739a4-a848-48f5-8f7d-4e2881b15e42" alt="Screenshot 3" width="200" style="display:inline;">
+<img src="https://github.com/user-attachments/assets/1e426390-852e-4aaf-991c-5c1911570872" alt="Screenshot 4" width="200" style="display:inline;">
+
+# How to use ?
+
+1) Create a superuser(this is the user who will be the customer support).
+2) Register/Signup another user.
+3) Login with credentials of the registered user in one window.
+4) Login with admin credentials in another window.
+5) Test out the chat functionality.
+
+
+
+
+
+
 ## Prerequisites
 
 Make sure you have the following installed:
