@@ -125,10 +125,6 @@ Make sure you have the following installed:
     http://127.0.0.1:8000
     ```
 
-## Additional Notes
-
-- Ensure the `.env` file is listed in `.gitignore` to keep sensitive information secure.
-- If using WebSockets or channels for real-time chat, make sure to configure Redis or any other message broker as required.
 
 ## License
 
