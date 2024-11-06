@@ -6,7 +6,8 @@ class Message(models.Model):
     receiver = models.ForeignKey(User, related_name='received_messages', on_delete=models.CASCADE)
     content = models.TextField()
     timestamp = models.DateTimeField(auto_now_add=True)
-    room = models.CharField(max_length=255,default="support")  # Add this line
+    room = models.CharField(max_length=255,default="support")
+    
 
     def __str__(self):
         return f"{self.sender} to {self.receiver}: {self.content[:20]}"

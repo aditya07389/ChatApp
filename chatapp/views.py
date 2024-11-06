@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth import authenticate,login
 from django.contrib.auth import logout as auth_logout
-
+from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required 
 import re
 from .models import Message
@@ -70,8 +70,15 @@ def signup(request):
 # View to render home page , login required to access this template
 @login_required
 def home(request):
-
-    return render(request, 'chatapp/Chat/home.html')
+    User = get_user_model()  # Get the user model
+    if request.user.is_superuser:
+        # If the user is a superuser, show all users
+        users = User.objects.exclude(username=request.user.username)
+    else:
+        # For normal users, show only the superuser
+        users = User.objects.filter(is_superuser=True)
+    
+    return render(request, 'chatapp/Chat/home.html', {'users': users})
 
 
 
@@ -97,9 +104,5 @@ def chat_room(request, username):
         'messages': messages
     })
 
-@login_required
-def home(request):
-    users = User.objects.exclude(id=request.user.id)
-    return render(request, 'chatapp/Chat/home.html', {'users': users})
 
 
